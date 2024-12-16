@@ -1,0 +1,318 @@
+/* Variables */
+:root{
+    --background-secondary: #ccc;
+    --background-primary: rgb(60, 153, 189);
+    --background-color: rgb(222, 228, 247);
+    --button-color: rgb(10, 179, 185);
+    --color: #faf7f7;
+    --dropdown: rgba(45,78,233, 0.7);
+    --link-color: rgb(3,243,56);
+    --font-color: #000;
+}
+
+
+body *{
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+header nav{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--background-primary);
+    padding:1.5rem;        
+}
+
+
+.search-bar {   
+    position: relative; 
+    display: flex;
+    justify-content: center; /* Centers the form horizontally */
+    padding: 5px;
+    
+  }
+  
+.search-bar .form-groups {
+    display: inline-flex;
+}
+
+.search-bar .form-groups input{
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 1rem;    
+}
+.search-bar .form-groups button{
+    background: var(--button-color);
+    color: var(--color);
+    border: 0;
+    padding: 7px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+header nav ul{ 
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.close-btn{
+    display: none !important;
+}
+@media (max-width: 768px){
+
+    header nav > ul{
+        display: none;
+        position: fixed;
+        background: rgb(0,0,0,0.5);
+        color: white;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .close-btn{   
+        display:block !important;              
+        color: white;
+        position: fixed;
+        top: 4px;
+        right: 4px;
+    }
+    .search-bar .form-group input{      
+        width: 100px;
+    }
+    
+}
+
+main {
+    padding: 50px;
+    background: var(--background-color);
+}
+
+section ul{
+    display: inline-flex;
+    list-style: none;
+}
+section ul li{
+    border-bottom: 2px solid var(--font-color) !important;
+    padding: 5px 10px
+}
+section ul li.active{
+    border-bottom: 2px solid var(--button-color) !important;   
+    
+}
+section ul li.active a{
+    color: var(--button-color) !important;
+    background: var(--color) 
+}
+section ul .nav-link{
+    color: var(--font-color) !important;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: var(--background-primary);
+    padding: 50px;
+    color: var(--color);
+}
+
+@media (max-width: 900px){
+    footer{
+        grid-template-columns: 1fr;        
+    }
+    .darkMode span{
+       display: none;
+    }
+}
+footer ul{
+    list-style: none;
+}
+footer h4{
+    text-wrap: nowrap;
+}
+footer form{
+    display: flex;
+    gap: 20px;
+    justify-content:center;
+}
+
+footer form button{
+    background: var(--button-color);
+    color: var(--color);
+    padding: 7px;
+    border: 0;
+    border-radius: 5px;
+}
+
+footer form input{
+    padding: 7px;
+    border: 0;
+}
+
+.toggler{
+    color: white;
+    display: none !important;
+}
+
+@media (max-width:900px){
+    .toggler{
+        display: block !important;;
+    }
+}
+
+.newsletter{
+    background: var(--background-color);
+    padding: 10px;
+    color: var(--font-color);
+}
+
+
+
+    
+
+.nav-link{
+    text-decoration: none;
+    color: var(--color);
+    transition: color 0.5s linear;
+}
+.nav-link:hover{
+    color:var(--link-color) !important;
+}
+
+.dropdowns{
+    position: relative;
+}
+.dropdowns:hover > .dropdown-menus {
+    opacity: 1; /* Make it visible */
+    transform: translateY(0); /* Move to its normal position */
+    pointer-events: auto; /* Allow interactions */
+}
+
+.dropdown-menus {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-10px); /* Slide up slightly when hidden */
+    pointer-events: none; /* Prevent interaction when hidden */
+    position: absolute;
+    top: 100%;
+    background: var(--background-primary);
+    z-index: 100;    
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+
+  .dropdown-menus li{
+    border-bottom: 2px solid white;
+    padding: 10px 40px;
+  }
+  .dropdown-menus li a{
+    text-wrap: nowrap
+  }
+.dropdown-menus .dropdown-menus{
+    right: 100%;
+}
+.form-groups input:focus{
+  outline: 3px solid rgb(10, 179, 185);
+    
+}
+
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--background-color);
+    color: white;
+    border: none; 
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+
+/* Hover effect */
+.scroll-to-top-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Dark mode css */
+
+.darkMode{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.darkMode span{
+    color: var(--color);
+    text-wrap: nowrap;
+}
+.darkMode button{
+    position: relative;
+    width: 50px;
+    height: 15px;
+    border-radius: 7px;    
+    background: var(--color);
+    border: 0;
+    cursor: pointer;
+    
+}
+.darkMode button div{
+    position: absolute;
+    top: 0%;
+    left:0%;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: var(--background-primary);
+    transition: left 0.3s linear;
+    cursor: pointer;
+}
+
+.dark-mode{
+    --background-primary: rgb(62, 65, 83);   
+    --dropdown: rgb(67, 63, 63);
+
+}
+body.dark-mode .darkMode button div{
+    left: 70%;
+}
+
+.search-result{
+    position: absolute;
+    background: var(--background-color) !important;
+    padding: 20px;
+    min-width: 300px;
+    max-height: 300px;
+    left:0;
+    top: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none; /* Prevent interaction when hidden */
+    overflow-y: scroll;
+}
+.search-result.active{
+    opacity: 1;
+    pointer-events: auto; /* Prevent interaction when hidden */
+}
+  
+/* Colors */
+.service-icon{
+    color: var(--button-color)
+}
+.about-text{
+    background: rgba(221, 240, 241, 0.7) ;    
+}
+

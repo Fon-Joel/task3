@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "name": "Web Development",
+        "description": "Build and maintain websites."
+    },
+    {
+        "id": 2,
+        "name": "Graphic Design",
+        "description": "Create stunning visuals and designs."
+    },
+    {
+        "id": 3,
+        "name": "SEO",
+        "description": "Optimize websites for better search engine rankings."
+    },
+    {
+        "id": 4,
+        "name": "Digital Marketing",
+        "description": "Promote brands through digital channels."
+    },
+    {
+        "id": 5,
+        "name": "Data Analysis",
+        "description": "Analyze and interpret complex data sets."
+    },
+    {
+        "id": 6,
+        "name": "Content Writing",
+        "description": "Write engaging and informative content."
+    },
+    {
+        "id": 7,
+        "name": "Project Management",
+        "description": "Plan and oversee projects to ensure success."
+    },
+    {
+        "id": 8,
+        "name": "Cybersecurity",
+        "description": "Protect systems and networks from cyber threats."
+    },
+    {
+        "id": 9,
+        "name": "Mobile App Development",
+        "description": "Develop applications for mobile devices."
+    },
+    {
+        "id": 10,
+        "name": "Cloud Computing",
+        "description": "Deliver computing services over the internet."
+    },
+    {
+        "id": 11,
+        "name": "Artificial Intelligence",
+        "description": "Build systems that simulate human intelligence."
+    },
+    {
+        "id": 12,
+        "name": "Machine Learning",
+        "description": "Create algorithms that improve automatically through experience."
+    },
+    {
+        "id": 13,
+        "name": "Blockchain Development",
+        "description": "Create decentralized applications using blockchain."
+    },
+    {
+        "id": 14,
+        "name": "UI/UX Design",
+        "description": "Design user interfaces and improve user experiences."
+    },
+    {
+        "id": 15,
+        "name": "E-commerce Solutions",
+        "description": "Build and manage online stores and platforms."
+    },
+    {
+        "id": 16,
+        "name": "Game Development",
+        "description": "Design and create interactive video games."
+    },
+    {
+        "id": 17,
+        "name": "Video Editing",
+        "description": "Edit and enhance video content."
+    },
+    {
+        "id": 18,
+        "name": "Social Media Management",
+        "description": "Manage and grow social media accounts."
+    },
+    {
+        "id": 19,
+        "name": "IT Support",
+        "description": "Provide technical support for hardware and software issues."
+    },
+    {
+        "id": 20,
+        "name": "Virtual Reality",
+        "description": "Develop immersive virtual environments."
+    }
+]
